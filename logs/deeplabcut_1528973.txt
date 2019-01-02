@@ -1,0 +1,1298 @@
+Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['hand', 'Finger1', 'Finger2', 'Joystick'],
+ 'batch_size': 1,
+ 'bottomheight': 400,
+ 'crop': True,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_demoDec31/demo_cluster_icm95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'leftwidth': 400,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1000,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_demoDec31/Documentation_data-demo_95shuffle1.pickle',
+ 'minsize': 100,
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pos_dist_thresh': 17,
+ 'project_path': '/network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31',
+ 'regularize': False,
+ 'rightwidth': 400,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31/dlc-models/iteration-0/demoDec31-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'topheight': 400,
+ 'use_gt_segm': False,
+ 'video': False,
+ 'video_batch': False,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+INFO:tensorflow:Restoring parameters from /network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt
+Restoring parameters from /network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt
+iteration: 1000 loss: 0.0190 lr: 0.005
+iteration: 2000 loss: 0.0086 lr: 0.005
+iteration: 3000 loss: 0.0063 lr: 0.005
+iteration: 4000 loss: 0.0053 lr: 0.005
+iteration: 5000 loss: 0.0045 lr: 0.005
+iteration: 6000 loss: 0.0043 lr: 0.005
+iteration: 7000 loss: 0.0037 lr: 0.005
+iteration: 8000 loss: 0.0036 lr: 0.005
+iteration: 9000 loss: 0.0034 lr: 0.005
+iteration: 10000 loss: 0.0031 lr: 0.005
+iteration: 11000 loss: 0.0055 lr: 0.02
+iteration: 12000 loss: 0.0043 lr: 0.02
+iteration: 13000 loss: 0.0036 lr: 0.02
+iteration: 14000 loss: 0.0033 lr: 0.02
+iteration: 15000 loss: 0.0029 lr: 0.02
+iteration: 16000 loss: 0.0028 lr: 0.02
+iteration: 17000 loss: 0.0028 lr: 0.02
+iteration: 18000 loss: 0.0027 lr: 0.02
+iteration: 19000 loss: 0.0025 lr: 0.02
+iteration: 20000 loss: 0.0024 lr: 0.02
+iteration: 21000 loss: 0.0024 lr: 0.02
+iteration: 22000 loss: 0.0023 lr: 0.02
+iteration: 23000 loss: 0.0023 lr: 0.02
+iteration: 24000 loss: 0.0022 lr: 0.02
+iteration: 25000 loss: 0.0022 lr: 0.02
+iteration: 26000 loss: 0.0022 lr: 0.02
+iteration: 27000 loss: 0.0021 lr: 0.02
+iteration: 28000 loss: 0.0020 lr: 0.02
+iteration: 29000 loss: 0.0020 lr: 0.02
+iteration: 30000 loss: 0.0021 lr: 0.02
+iteration: 31000 loss: 0.0021 lr: 0.02
+iteration: 32000 loss: 0.0020 lr: 0.02
+iteration: 33000 loss: 0.0020 lr: 0.02
+iteration: 34000 loss: 0.0020 lr: 0.02
+iteration: 35000 loss: 0.0019 lr: 0.02
+iteration: 36000 loss: 0.0019 lr: 0.02
+iteration: 37000 loss: 0.0019 lr: 0.02
+iteration: 38000 loss: 0.0018 lr: 0.02
+iteration: 39000 loss: 0.0018 lr: 0.02
+iteration: 40000 loss: 0.0019 lr: 0.02
+iteration: 41000 loss: 0.0018 lr: 0.02
+iteration: 42000 loss: 0.0019 lr: 0.02
+iteration: 43000 loss: 0.0018 lr: 0.02
+iteration: 44000 loss: 0.0018 lr: 0.02
+iteration: 45000 loss: 0.0018 lr: 0.02
+iteration: 46000 loss: 0.0018 lr: 0.02
+iteration: 47000 loss: 0.0018 lr: 0.02
+iteration: 48000 loss: 0.0018 lr: 0.02
+iteration: 49000 loss: 0.0018 lr: 0.02
+iteration: 50000 loss: 0.0018 lr: 0.02
+iteration: 51000 loss: 0.0018 lr: 0.02
+iteration: 52000 loss: 0.0017 lr: 0.02
+iteration: 53000 loss: 0.0018 lr: 0.02
+iteration: 54000 loss: 0.0017 lr: 0.02
+iteration: 55000 loss: 0.0017 lr: 0.02
+iteration: 56000 loss: 0.0017 lr: 0.02
+iteration: 57000 loss: 0.0018 lr: 0.02
+iteration: 58000 loss: 0.0018 lr: 0.02
+iteration: 59000 loss: 0.0017 lr: 0.02
+iteration: 60000 loss: 0.0017 lr: 0.02
+iteration: 61000 loss: 0.0017 lr: 0.02
+iteration: 62000 loss: 0.0016 lr: 0.02
+iteration: 63000 loss: 0.0018 lr: 0.02
+iteration: 64000 loss: 0.0016 lr: 0.02
+iteration: 65000 loss: 0.0018 lr: 0.02
+iteration: 66000 loss: 0.0017 lr: 0.02
+iteration: 67000 loss: 0.0016 lr: 0.02
+iteration: 68000 loss: 0.0016 lr: 0.02
+iteration: 69000 loss: 0.0017 lr: 0.02
+iteration: 70000 loss: 0.0016 lr: 0.02
+iteration: 71000 loss: 0.0016 lr: 0.02
+iteration: 72000 loss: 0.0016 lr: 0.02
+iteration: 73000 loss: 0.0016 lr: 0.02
+iteration: 74000 loss: 0.0016 lr: 0.02
+iteration: 75000 loss: 0.0016 lr: 0.02
+iteration: 76000 loss: 0.0016 lr: 0.02
+iteration: 77000 loss: 0.0015 lr: 0.02
+iteration: 78000 loss: 0.0015 lr: 0.02
+iteration: 79000 loss: 0.0015 lr: 0.02
+iteration: 80000 loss: 0.0015 lr: 0.02
+iteration: 81000 loss: 0.0015 lr: 0.02
+iteration: 82000 loss: 0.0015 lr: 0.02
+iteration: 83000 loss: 0.0014 lr: 0.02
+iteration: 84000 loss: 0.0014 lr: 0.02
+iteration: 85000 loss: 0.0015 lr: 0.02
+iteration: 86000 loss: 0.0014 lr: 0.02
+iteration: 87000 loss: 0.0015 lr: 0.02
+iteration: 88000 loss: 0.0014 lr: 0.02
+iteration: 89000 loss: 0.0014 lr: 0.02
+iteration: 90000 loss: 0.0014 lr: 0.02
+iteration: 91000 loss: 0.0014 lr: 0.02
+iteration: 92000 loss: 0.0014 lr: 0.02
+iteration: 93000 loss: 0.0014 lr: 0.02
+iteration: 94000 loss: 0.0014 lr: 0.02
+iteration: 95000 loss: 0.0014 lr: 0.02
+iteration: 96000 loss: 0.0013 lr: 0.02
+iteration: 97000 loss: 0.0013 lr: 0.02
+iteration: 98000 loss: 0.0014 lr: 0.02
+iteration: 99000 loss: 0.0013 lr: 0.02
+iteration: 100000 loss: 0.0013 lr: 0.02
+iteration: 101000 loss: 0.0014 lr: 0.02
+iteration: 102000 loss: 0.0013 lr: 0.02
+iteration: 103000 loss: 0.0013 lr: 0.02
+iteration: 104000 loss: 0.0013 lr: 0.02
+iteration: 105000 loss: 0.0013 lr: 0.02
+iteration: 106000 loss: 0.0013 lr: 0.02
+iteration: 107000 loss: 0.0013 lr: 0.02
+iteration: 108000 loss: 0.0013 lr: 0.02
+iteration: 109000 loss: 0.0013 lr: 0.02
+iteration: 110000 loss: 0.0013 lr: 0.02
+iteration: 111000 loss: 0.0013 lr: 0.02
+iteration: 112000 loss: 0.0013 lr: 0.02
+iteration: 113000 loss: 0.0013 lr: 0.02
+iteration: 114000 loss: 0.0013 lr: 0.02
+iteration: 115000 loss: 0.0012 lr: 0.02
+iteration: 116000 loss: 0.0013 lr: 0.02
+iteration: 117000 loss: 0.0014 lr: 0.02
+iteration: 118000 loss: 0.0012 lr: 0.02
+iteration: 119000 loss: 0.0013 lr: 0.02
+iteration: 120000 loss: 0.0012 lr: 0.02
+iteration: 121000 loss: 0.0013 lr: 0.02
+iteration: 122000 loss: 0.0013 lr: 0.02
+iteration: 123000 loss: 0.0012 lr: 0.02
+iteration: 124000 loss: 0.0012 lr: 0.02
+iteration: 125000 loss: 0.0012 lr: 0.02
+iteration: 126000 loss: 0.0012 lr: 0.02
+iteration: 127000 loss: 0.0012 lr: 0.02
+iteration: 128000 loss: 0.0012 lr: 0.02
+iteration: 129000 loss: 0.0013 lr: 0.02
+iteration: 130000 loss: 0.0013 lr: 0.02
+iteration: 131000 loss: 0.0012 lr: 0.02
+iteration: 132000 loss: 0.0012 lr: 0.02
+iteration: 133000 loss: 0.0012 lr: 0.02
+iteration: 134000 loss: 0.0012 lr: 0.02
+iteration: 135000 loss: 0.0012 lr: 0.02
+iteration: 136000 loss: 0.0012 lr: 0.02
+iteration: 137000 loss: 0.0012 lr: 0.02
+iteration: 138000 loss: 0.0012 lr: 0.02
+iteration: 139000 loss: 0.0012 lr: 0.02
+iteration: 140000 loss: 0.0012 lr: 0.02
+iteration: 141000 loss: 0.0012 lr: 0.02
+iteration: 142000 loss: 0.0013 lr: 0.02
+iteration: 143000 loss: 0.0012 lr: 0.02
+iteration: 144000 loss: 0.0012 lr: 0.02
+iteration: 145000 loss: 0.0012 lr: 0.02
+iteration: 146000 loss: 0.0012 lr: 0.02
+iteration: 147000 loss: 0.0012 lr: 0.02
+iteration: 148000 loss: 0.0012 lr: 0.02
+iteration: 149000 loss: 0.0013 lr: 0.02
+iteration: 150000 loss: 0.0012 lr: 0.02
+iteration: 151000 loss: 0.0012 lr: 0.02
+iteration: 152000 loss: 0.0012 lr: 0.02
+iteration: 153000 loss: 0.0012 lr: 0.02
+iteration: 154000 loss: 0.0011 lr: 0.02
+iteration: 155000 loss: 0.0012 lr: 0.02
+iteration: 156000 loss: 0.0012 lr: 0.02
+iteration: 157000 loss: 0.0011 lr: 0.02
+iteration: 158000 loss: 0.0012 lr: 0.02
+iteration: 159000 loss: 0.0012 lr: 0.02
+iteration: 160000 loss: 0.0012 lr: 0.02
+iteration: 161000 loss: 0.0012 lr: 0.02
+iteration: 162000 loss: 0.0012 lr: 0.02
+iteration: 163000 loss: 0.0012 lr: 0.02
+iteration: 164000 loss: 0.0011 lr: 0.02
+iteration: 165000 loss: 0.0012 lr: 0.02
+iteration: 166000 loss: 0.0012 lr: 0.02
+iteration: 167000 loss: 0.0011 lr: 0.02
+iteration: 168000 loss: 0.0012 lr: 0.02
+iteration: 169000 loss: 0.0012 lr: 0.02
+iteration: 170000 loss: 0.0012 lr: 0.02
+iteration: 171000 loss: 0.0011 lr: 0.02
+iteration: 172000 loss: 0.0011 lr: 0.02
+iteration: 173000 loss: 0.0012 lr: 0.02
+iteration: 174000 loss: 0.0012 lr: 0.02
+iteration: 175000 loss: 0.0011 lr: 0.02
+iteration: 176000 loss: 0.0012 lr: 0.02
+iteration: 177000 loss: 0.0011 lr: 0.02
+iteration: 178000 loss: 0.0012 lr: 0.02
+iteration: 179000 loss: 0.0012 lr: 0.02
+iteration: 180000 loss: 0.0011 lr: 0.02
+iteration: 181000 loss: 0.0011 lr: 0.02
+iteration: 182000 loss: 0.0011 lr: 0.02
+iteration: 183000 loss: 0.0012 lr: 0.02
+iteration: 184000 loss: 0.0012 lr: 0.02
+iteration: 185000 loss: 0.0011 lr: 0.02
+iteration: 186000 loss: 0.0012 lr: 0.02
+iteration: 187000 loss: 0.0011 lr: 0.02
+iteration: 188000 loss: 0.0011 lr: 0.02
+iteration: 189000 loss: 0.0012 lr: 0.02
+iteration: 190000 loss: 0.0012 lr: 0.02
+iteration: 191000 loss: 0.0011 lr: 0.02
+iteration: 192000 loss: 0.0011 lr: 0.02
+iteration: 193000 loss: 0.0012 lr: 0.02
+iteration: 194000 loss: 0.0011 lr: 0.02
+iteration: 195000 loss: 0.0012 lr: 0.02
+iteration: 196000 loss: 0.0011 lr: 0.02
+iteration: 197000 loss: 0.0011 lr: 0.02
+iteration: 198000 loss: 0.0011 lr: 0.02
+iteration: 199000 loss: 0.0011 lr: 0.02
+iteration: 200000 loss: 0.0011 lr: 0.02
+iteration: 201000 loss: 0.0011 lr: 0.02
+iteration: 202000 loss: 0.0011 lr: 0.02
+iteration: 203000 loss: 0.0012 lr: 0.02
+iteration: 204000 loss: 0.0011 lr: 0.02
+iteration: 205000 loss: 0.0011 lr: 0.02
+iteration: 206000 loss: 0.0011 lr: 0.02
+iteration: 207000 loss: 0.0011 lr: 0.02
+iteration: 208000 loss: 0.0011 lr: 0.02
+iteration: 209000 loss: 0.0011 lr: 0.02
+iteration: 210000 loss: 0.0011 lr: 0.02
+iteration: 211000 loss: 0.0012 lr: 0.02
+iteration: 212000 loss: 0.0011 lr: 0.02
+iteration: 213000 loss: 0.0011 lr: 0.02
+iteration: 214000 loss: 0.0011 lr: 0.02
+iteration: 215000 loss: 0.0011 lr: 0.02
+iteration: 216000 loss: 0.0011 lr: 0.02
+iteration: 217000 loss: 0.0011 lr: 0.02
+iteration: 218000 loss: 0.0011 lr: 0.02
+iteration: 219000 loss: 0.0011 lr: 0.02
+iteration: 220000 loss: 0.0011 lr: 0.02
+iteration: 221000 loss: 0.0010 lr: 0.02
+iteration: 222000 loss: 0.0011 lr: 0.02
+iteration: 223000 loss: 0.0011 lr: 0.02
+iteration: 224000 loss: 0.0011 lr: 0.02
+iteration: 225000 loss: 0.0011 lr: 0.02
+iteration: 226000 loss: 0.0011 lr: 0.02
+iteration: 227000 loss: 0.0011 lr: 0.02
+iteration: 228000 loss: 0.0011 lr: 0.02
+iteration: 229000 loss: 0.0011 lr: 0.02
+iteration: 230000 loss: 0.0011 lr: 0.02
+iteration: 231000 loss: 0.0012 lr: 0.02
+iteration: 232000 loss: 0.0011 lr: 0.02
+iteration: 233000 loss: 0.0011 lr: 0.02
+iteration: 234000 loss: 0.0011 lr: 0.02
+iteration: 235000 loss: 0.0011 lr: 0.02
+iteration: 236000 loss: 0.0011 lr: 0.02
+iteration: 237000 loss: 0.0011 lr: 0.02
+iteration: 238000 loss: 0.0011 lr: 0.02
+iteration: 239000 loss: 0.0011 lr: 0.02
+iteration: 240000 loss: 0.0011 lr: 0.02
+iteration: 241000 loss: 0.0011 lr: 0.02
+iteration: 242000 loss: 0.0011 lr: 0.02
+iteration: 243000 loss: 0.0011 lr: 0.02
+iteration: 244000 loss: 0.0011 lr: 0.02
+iteration: 245000 loss: 0.0011 lr: 0.02
+iteration: 246000 loss: 0.0011 lr: 0.02
+iteration: 247000 loss: 0.0010 lr: 0.02
+iteration: 248000 loss: 0.0011 lr: 0.02
+iteration: 249000 loss: 0.0010 lr: 0.02
+iteration: 250000 loss: 0.0011 lr: 0.02
+iteration: 251000 loss: 0.0011 lr: 0.02
+iteration: 252000 loss: 0.0011 lr: 0.02
+iteration: 253000 loss: 0.0011 lr: 0.02
+iteration: 254000 loss: 0.0011 lr: 0.02
+iteration: 255000 loss: 0.0011 lr: 0.02
+iteration: 256000 loss: 0.0011 lr: 0.02
+iteration: 257000 loss: 0.0011 lr: 0.02
+iteration: 258000 loss: 0.0011 lr: 0.02
+iteration: 259000 loss: 0.0011 lr: 0.02
+iteration: 260000 loss: 0.0011 lr: 0.02
+iteration: 261000 loss: 0.0011 lr: 0.02
+iteration: 262000 loss: 0.0011 lr: 0.02
+iteration: 263000 loss: 0.0010 lr: 0.02
+iteration: 264000 loss: 0.0011 lr: 0.02
+iteration: 265000 loss: 0.0011 lr: 0.02
+iteration: 266000 loss: 0.0010 lr: 0.02
+iteration: 267000 loss: 0.0011 lr: 0.02
+iteration: 268000 loss: 0.0011 lr: 0.02
+iteration: 269000 loss: 0.0011 lr: 0.02
+iteration: 270000 loss: 0.0010 lr: 0.02
+iteration: 271000 loss: 0.0010 lr: 0.02
+iteration: 272000 loss: 0.0011 lr: 0.02
+iteration: 273000 loss: 0.0010 lr: 0.02
+iteration: 274000 loss: 0.0010 lr: 0.02
+iteration: 275000 loss: 0.0011 lr: 0.02
+iteration: 276000 loss: 0.0011 lr: 0.02
+iteration: 277000 loss: 0.0010 lr: 0.02
+iteration: 278000 loss: 0.0011 lr: 0.02
+iteration: 279000 loss: 0.0010 lr: 0.02
+iteration: 280000 loss: 0.0011 lr: 0.02
+iteration: 281000 loss: 0.0010 lr: 0.02
+iteration: 282000 loss: 0.0010 lr: 0.02
+iteration: 283000 loss: 0.0010 lr: 0.02
+iteration: 284000 loss: 0.0010 lr: 0.02
+iteration: 285000 loss: 0.0011 lr: 0.02
+iteration: 286000 loss: 0.0011 lr: 0.02
+iteration: 287000 loss: 0.0011 lr: 0.02
+iteration: 288000 loss: 0.0011 lr: 0.02
+iteration: 289000 loss: 0.0010 lr: 0.02
+iteration: 290000 loss: 0.0011 lr: 0.02
+iteration: 291000 loss: 0.0011 lr: 0.02
+iteration: 292000 loss: 0.0010 lr: 0.02
+iteration: 293000 loss: 0.0011 lr: 0.02
+iteration: 294000 loss: 0.0010 lr: 0.02
+iteration: 295000 loss: 0.0010 lr: 0.02
+iteration: 296000 loss: 0.0010 lr: 0.02
+iteration: 297000 loss: 0.0011 lr: 0.02
+iteration: 298000 loss: 0.0010 lr: 0.02
+iteration: 299000 loss: 0.0010 lr: 0.02
+iteration: 300000 loss: 0.0010 lr: 0.02
+iteration: 301000 loss: 0.0010 lr: 0.02
+iteration: 302000 loss: 0.0010 lr: 0.02
+iteration: 303000 loss: 0.0011 lr: 0.02
+iteration: 304000 loss: 0.0010 lr: 0.02
+iteration: 305000 loss: 0.0010 lr: 0.02
+iteration: 306000 loss: 0.0010 lr: 0.02
+iteration: 307000 loss: 0.0010 lr: 0.02
+iteration: 308000 loss: 0.0010 lr: 0.02
+iteration: 309000 loss: 0.0010 lr: 0.02
+iteration: 310000 loss: 0.0010 lr: 0.02
+iteration: 311000 loss: 0.0010 lr: 0.02
+iteration: 312000 loss: 0.0010 lr: 0.02
+iteration: 313000 loss: 0.0010 lr: 0.02
+iteration: 314000 loss: 0.0010 lr: 0.02
+iteration: 315000 loss: 0.0010 lr: 0.02
+iteration: 316000 loss: 0.0011 lr: 0.02
+iteration: 317000 loss: 0.0010 lr: 0.02
+iteration: 318000 loss: 0.0010 lr: 0.02
+iteration: 319000 loss: 0.0010 lr: 0.02
+iteration: 320000 loss: 0.0011 lr: 0.02
+iteration: 321000 loss: 0.0010 lr: 0.02
+iteration: 322000 loss: 0.0010 lr: 0.02
+iteration: 323000 loss: 0.0010 lr: 0.02
+iteration: 324000 loss: 0.0010 lr: 0.02
+iteration: 325000 loss: 0.0011 lr: 0.02
+iteration: 326000 loss: 0.0010 lr: 0.02
+iteration: 327000 loss: 0.0010 lr: 0.02
+iteration: 328000 loss: 0.0010 lr: 0.02
+iteration: 329000 loss: 0.0010 lr: 0.02
+iteration: 330000 loss: 0.0010 lr: 0.02
+iteration: 331000 loss: 0.0010 lr: 0.02
+iteration: 332000 loss: 0.0010 lr: 0.02
+iteration: 333000 loss: 0.0010 lr: 0.02
+iteration: 334000 loss: 0.0010 lr: 0.02
+iteration: 335000 loss: 0.0010 lr: 0.02
+iteration: 336000 loss: 0.0010 lr: 0.02
+iteration: 337000 loss: 0.0010 lr: 0.02
+iteration: 338000 loss: 0.0010 lr: 0.02
+iteration: 339000 loss: 0.0010 lr: 0.02
+iteration: 340000 loss: 0.0010 lr: 0.02
+iteration: 341000 loss: 0.0010 lr: 0.02
+iteration: 342000 loss: 0.0010 lr: 0.02
+iteration: 343000 loss: 0.0010 lr: 0.02
+iteration: 344000 loss: 0.0010 lr: 0.02
+iteration: 345000 loss: 0.0010 lr: 0.02
+iteration: 346000 loss: 0.0010 lr: 0.02
+iteration: 347000 loss: 0.0010 lr: 0.02
+iteration: 348000 loss: 0.0010 lr: 0.02
+iteration: 349000 loss: 0.0011 lr: 0.02
+iteration: 350000 loss: 0.0010 lr: 0.02
+iteration: 351000 loss: 0.0010 lr: 0.02
+iteration: 352000 loss: 0.0010 lr: 0.02
+iteration: 353000 loss: 0.0010 lr: 0.02
+iteration: 354000 loss: 0.0010 lr: 0.02
+iteration: 355000 loss: 0.0010 lr: 0.02
+iteration: 356000 loss: 0.0010 lr: 0.02
+iteration: 357000 loss: 0.0010 lr: 0.02
+iteration: 358000 loss: 0.0010 lr: 0.02
+iteration: 359000 loss: 0.0009 lr: 0.02
+iteration: 360000 loss: 0.0010 lr: 0.02
+iteration: 361000 loss: 0.0010 lr: 0.02
+iteration: 362000 loss: 0.0011 lr: 0.02
+iteration: 363000 loss: 0.0009 lr: 0.02
+iteration: 364000 loss: 0.0010 lr: 0.02
+iteration: 365000 loss: 0.0010 lr: 0.02
+iteration: 366000 loss: 0.0010 lr: 0.02
+iteration: 367000 loss: 0.0010 lr: 0.02
+iteration: 368000 loss: 0.0010 lr: 0.02
+iteration: 369000 loss: 0.0009 lr: 0.02
+iteration: 370000 loss: 0.0010 lr: 0.02
+iteration: 371000 loss: 0.0010 lr: 0.02
+iteration: 372000 loss: 0.0010 lr: 0.02
+iteration: 373000 loss: 0.0010 lr: 0.02
+iteration: 374000 loss: 0.0010 lr: 0.02
+iteration: 375000 loss: 0.0010 lr: 0.02
+iteration: 376000 loss: 0.0010 lr: 0.02
+iteration: 377000 loss: 0.0010 lr: 0.02
+iteration: 378000 loss: 0.0010 lr: 0.02
+iteration: 379000 loss: 0.0009 lr: 0.02
+iteration: 380000 loss: 0.0010 lr: 0.02
+iteration: 381000 loss: 0.0009 lr: 0.02
+iteration: 382000 loss: 0.0010 lr: 0.02
+iteration: 383000 loss: 0.0010 lr: 0.02
+iteration: 384000 loss: 0.0009 lr: 0.02
+iteration: 385000 loss: 0.0010 lr: 0.02
+iteration: 386000 loss: 0.0009 lr: 0.02
+iteration: 387000 loss: 0.0010 lr: 0.02
+iteration: 388000 loss: 0.0009 lr: 0.02
+iteration: 389000 loss: 0.0010 lr: 0.02
+iteration: 390000 loss: 0.0010 lr: 0.02
+iteration: 391000 loss: 0.0009 lr: 0.02
+iteration: 392000 loss: 0.0009 lr: 0.02
+iteration: 393000 loss: 0.0010 lr: 0.02
+iteration: 394000 loss: 0.0009 lr: 0.02
+iteration: 395000 loss: 0.0009 lr: 0.02
+iteration: 396000 loss: 0.0009 lr: 0.02
+iteration: 397000 loss: 0.0010 lr: 0.02
+iteration: 398000 loss: 0.0010 lr: 0.02
+iteration: 399000 loss: 0.0009 lr: 0.02
+iteration: 400000 loss: 0.0009 lr: 0.02
+iteration: 401000 loss: 0.0010 lr: 0.02
+iteration: 402000 loss: 0.0009 lr: 0.02
+iteration: 403000 loss: 0.0009 lr: 0.02
+iteration: 404000 loss: 0.0009 lr: 0.02
+iteration: 405000 loss: 0.0009 lr: 0.02
+iteration: 406000 loss: 0.0009 lr: 0.02
+iteration: 407000 loss: 0.0009 lr: 0.02
+iteration: 408000 loss: 0.0009 lr: 0.02
+iteration: 409000 loss: 0.0009 lr: 0.02
+iteration: 410000 loss: 0.0009 lr: 0.02
+iteration: 411000 loss: 0.0009 lr: 0.02
+iteration: 412000 loss: 0.0009 lr: 0.02
+iteration: 413000 loss: 0.0009 lr: 0.02
+iteration: 414000 loss: 0.0009 lr: 0.02
+iteration: 415000 loss: 0.0009 lr: 0.02
+iteration: 416000 loss: 0.0009 lr: 0.02
+iteration: 417000 loss: 0.0009 lr: 0.02
+iteration: 418000 loss: 0.0009 lr: 0.02
+iteration: 419000 loss: 0.0009 lr: 0.02
+iteration: 420000 loss: 0.0009 lr: 0.02
+iteration: 421000 loss: 0.0009 lr: 0.02
+iteration: 422000 loss: 0.0009 lr: 0.02
+iteration: 423000 loss: 0.0009 lr: 0.02
+iteration: 424000 loss: 0.0009 lr: 0.02
+iteration: 425000 loss: 0.0009 lr: 0.02
+iteration: 426000 loss: 0.0009 lr: 0.02
+iteration: 427000 loss: 0.0009 lr: 0.02
+iteration: 428000 loss: 0.0009 lr: 0.02
+iteration: 429000 loss: 0.0009 lr: 0.02
+iteration: 430000 loss: 0.0009 lr: 0.02
+iteration: 431000 loss: 0.0008 lr: 0.002
+iteration: 432000 loss: 0.0008 lr: 0.002
+iteration: 433000 loss: 0.0008 lr: 0.002
+iteration: 434000 loss: 0.0008 lr: 0.002
+iteration: 435000 loss: 0.0008 lr: 0.002
+iteration: 436000 loss: 0.0008 lr: 0.002
+iteration: 437000 loss: 0.0007 lr: 0.002
+iteration: 438000 loss: 0.0008 lr: 0.002
+iteration: 439000 loss: 0.0007 lr: 0.002
+iteration: 440000 loss: 0.0008 lr: 0.002
+iteration: 441000 loss: 0.0008 lr: 0.002
+iteration: 442000 loss: 0.0008 lr: 0.002
+iteration: 443000 loss: 0.0007 lr: 0.002
+iteration: 444000 loss: 0.0007 lr: 0.002
+iteration: 445000 loss: 0.0007 lr: 0.002
+iteration: 446000 loss: 0.0008 lr: 0.002
+iteration: 447000 loss: 0.0007 lr: 0.002
+iteration: 448000 loss: 0.0007 lr: 0.002
+iteration: 449000 loss: 0.0007 lr: 0.002
+iteration: 450000 loss: 0.0007 lr: 0.002
+iteration: 451000 loss: 0.0008 lr: 0.002
+iteration: 452000 loss: 0.0007 lr: 0.002
+iteration: 453000 loss: 0.0008 lr: 0.002
+iteration: 454000 loss: 0.0007 lr: 0.002
+iteration: 455000 loss: 0.0008 lr: 0.002
+iteration: 456000 loss: 0.0007 lr: 0.002
+iteration: 457000 loss: 0.0007 lr: 0.002
+iteration: 458000 loss: 0.0007 lr: 0.002
+iteration: 459000 loss: 0.0007 lr: 0.002
+iteration: 460000 loss: 0.0007 lr: 0.002
+iteration: 461000 loss: 0.0007 lr: 0.002
+iteration: 462000 loss: 0.0007 lr: 0.002
+iteration: 463000 loss: 0.0008 lr: 0.002
+iteration: 464000 loss: 0.0007 lr: 0.002
+iteration: 465000 loss: 0.0007 lr: 0.002
+iteration: 466000 loss: 0.0007 lr: 0.002
+iteration: 467000 loss: 0.0007 lr: 0.002
+iteration: 468000 loss: 0.0007 lr: 0.002
+iteration: 469000 loss: 0.0007 lr: 0.002
+iteration: 470000 loss: 0.0007 lr: 0.002
+iteration: 471000 loss: 0.0007 lr: 0.002
+iteration: 472000 loss: 0.0007 lr: 0.002
+iteration: 473000 loss: 0.0007 lr: 0.002
+iteration: 474000 loss: 0.0007 lr: 0.002
+iteration: 475000 loss: 0.0007 lr: 0.002
+iteration: 476000 loss: 0.0007 lr: 0.002
+iteration: 477000 loss: 0.0007 lr: 0.002
+iteration: 478000 loss: 0.0007 lr: 0.002
+iteration: 479000 loss: 0.0007 lr: 0.002
+iteration: 480000 loss: 0.0007 lr: 0.002
+iteration: 481000 loss: 0.0007 lr: 0.002
+iteration: 482000 loss: 0.0007 lr: 0.002
+iteration: 483000 loss: 0.0007 lr: 0.002
+iteration: 484000 loss: 0.0007 lr: 0.002
+iteration: 485000 loss: 0.0007 lr: 0.002
+iteration: 486000 loss: 0.0007 lr: 0.002
+iteration: 487000 loss: 0.0007 lr: 0.002
+iteration: 488000 loss: 0.0007 lr: 0.002
+iteration: 489000 loss: 0.0007 lr: 0.002
+iteration: 490000 loss: 0.0007 lr: 0.002
+iteration: 491000 loss: 0.0007 lr: 0.002
+iteration: 492000 loss: 0.0007 lr: 0.002
+iteration: 493000 loss: 0.0007 lr: 0.002
+iteration: 494000 loss: 0.0007 lr: 0.002
+iteration: 495000 loss: 0.0007 lr: 0.002
+iteration: 496000 loss: 0.0007 lr: 0.002
+iteration: 497000 loss: 0.0007 lr: 0.002
+iteration: 498000 loss: 0.0007 lr: 0.002
+iteration: 499000 loss: 0.0007 lr: 0.002
+iteration: 500000 loss: 0.0007 lr: 0.002
+iteration: 501000 loss: 0.0007 lr: 0.002
+iteration: 502000 loss: 0.0007 lr: 0.002
+iteration: 503000 loss: 0.0007 lr: 0.002
+iteration: 504000 loss: 0.0007 lr: 0.002
+iteration: 505000 loss: 0.0007 lr: 0.002
+iteration: 506000 loss: 0.0007 lr: 0.002
+iteration: 507000 loss: 0.0007 lr: 0.002
+iteration: 508000 loss: 0.0007 lr: 0.002
+iteration: 509000 loss: 0.0007 lr: 0.002
+iteration: 510000 loss: 0.0007 lr: 0.002
+iteration: 511000 loss: 0.0007 lr: 0.002
+iteration: 512000 loss: 0.0007 lr: 0.002
+iteration: 513000 loss: 0.0007 lr: 0.002
+iteration: 514000 loss: 0.0007 lr: 0.002
+iteration: 515000 loss: 0.0007 lr: 0.002
+iteration: 516000 loss: 0.0007 lr: 0.002
+iteration: 517000 loss: 0.0007 lr: 0.002
+iteration: 518000 loss: 0.0007 lr: 0.002
+iteration: 519000 loss: 0.0007 lr: 0.002
+iteration: 520000 loss: 0.0007 lr: 0.002
+iteration: 521000 loss: 0.0007 lr: 0.002
+iteration: 522000 loss: 0.0007 lr: 0.002
+iteration: 523000 loss: 0.0007 lr: 0.002
+iteration: 524000 loss: 0.0007 lr: 0.002
+iteration: 525000 loss: 0.0007 lr: 0.002
+iteration: 526000 loss: 0.0007 lr: 0.002
+iteration: 527000 loss: 0.0007 lr: 0.002
+iteration: 528000 loss: 0.0007 lr: 0.002
+iteration: 529000 loss: 0.0007 lr: 0.002
+iteration: 530000 loss: 0.0007 lr: 0.002
+iteration: 531000 loss: 0.0007 lr: 0.002
+iteration: 532000 loss: 0.0007 lr: 0.002
+iteration: 533000 loss: 0.0007 lr: 0.002
+iteration: 534000 loss: 0.0007 lr: 0.002
+iteration: 535000 loss: 0.0007 lr: 0.002
+iteration: 536000 loss: 0.0007 lr: 0.002
+iteration: 537000 loss: 0.0007 lr: 0.002
+iteration: 538000 loss: 0.0007 lr: 0.002
+iteration: 539000 loss: 0.0007 lr: 0.002
+iteration: 540000 loss: 0.0007 lr: 0.002
+iteration: 541000 loss: 0.0007 lr: 0.002
+iteration: 542000 loss: 0.0007 lr: 0.002
+iteration: 543000 loss: 0.0007 lr: 0.002
+iteration: 544000 loss: 0.0007 lr: 0.002
+iteration: 545000 loss: 0.0007 lr: 0.002
+iteration: 546000 loss: 0.0007 lr: 0.002
+iteration: 547000 loss: 0.0007 lr: 0.002
+iteration: 548000 loss: 0.0007 lr: 0.002
+iteration: 549000 loss: 0.0007 lr: 0.002
+iteration: 550000 loss: 0.0007 lr: 0.002
+iteration: 551000 loss: 0.0007 lr: 0.002
+iteration: 552000 loss: 0.0007 lr: 0.002
+iteration: 553000 loss: 0.0007 lr: 0.002
+iteration: 554000 loss: 0.0007 lr: 0.002
+iteration: 555000 loss: 0.0007 lr: 0.002
+iteration: 556000 loss: 0.0007 lr: 0.002
+iteration: 557000 loss: 0.0007 lr: 0.002
+iteration: 558000 loss: 0.0007 lr: 0.002
+iteration: 559000 loss: 0.0007 lr: 0.002
+iteration: 560000 loss: 0.0007 lr: 0.002
+iteration: 561000 loss: 0.0007 lr: 0.002
+iteration: 562000 loss: 0.0007 lr: 0.002
+iteration: 563000 loss: 0.0007 lr: 0.002
+iteration: 564000 loss: 0.0007 lr: 0.002
+iteration: 565000 loss: 0.0007 lr: 0.002
+iteration: 566000 loss: 0.0007 lr: 0.002
+iteration: 567000 loss: 0.0007 lr: 0.002
+iteration: 568000 loss: 0.0007 lr: 0.002
+iteration: 569000 loss: 0.0007 lr: 0.002
+iteration: 570000 loss: 0.0007 lr: 0.002
+iteration: 571000 loss: 0.0007 lr: 0.002
+iteration: 572000 loss: 0.0007 lr: 0.002
+iteration: 573000 loss: 0.0007 lr: 0.002
+iteration: 574000 loss: 0.0007 lr: 0.002
+iteration: 575000 loss: 0.0007 lr: 0.002
+iteration: 576000 loss: 0.0007 lr: 0.002
+iteration: 577000 loss: 0.0007 lr: 0.002
+iteration: 578000 loss: 0.0007 lr: 0.002
+iteration: 579000 loss: 0.0007 lr: 0.002
+iteration: 580000 loss: 0.0007 lr: 0.002
+iteration: 581000 loss: 0.0007 lr: 0.002
+iteration: 582000 loss: 0.0007 lr: 0.002
+iteration: 583000 loss: 0.0007 lr: 0.002
+iteration: 584000 loss: 0.0007 lr: 0.002
+iteration: 585000 loss: 0.0007 lr: 0.002
+iteration: 586000 loss: 0.0007 lr: 0.002
+iteration: 587000 loss: 0.0007 lr: 0.002
+iteration: 588000 loss: 0.0007 lr: 0.002
+iteration: 589000 loss: 0.0007 lr: 0.002
+iteration: 590000 loss: 0.0007 lr: 0.002
+iteration: 591000 loss: 0.0007 lr: 0.002
+iteration: 592000 loss: 0.0007 lr: 0.002
+iteration: 593000 loss: 0.0007 lr: 0.002
+iteration: 594000 loss: 0.0007 lr: 0.002
+iteration: 595000 loss: 0.0007 lr: 0.002
+iteration: 596000 loss: 0.0007 lr: 0.002
+iteration: 597000 loss: 0.0007 lr: 0.002
+iteration: 598000 loss: 0.0007 lr: 0.002
+iteration: 599000 loss: 0.0007 lr: 0.002
+iteration: 600000 loss: 0.0007 lr: 0.002
+iteration: 601000 loss: 0.0007 lr: 0.002
+iteration: 602000 loss: 0.0007 lr: 0.002
+iteration: 603000 loss: 0.0007 lr: 0.002
+iteration: 604000 loss: 0.0007 lr: 0.002
+iteration: 605000 loss: 0.0007 lr: 0.002
+iteration: 606000 loss: 0.0007 lr: 0.002
+iteration: 607000 loss: 0.0007 lr: 0.002
+iteration: 608000 loss: 0.0007 lr: 0.002
+iteration: 609000 loss: 0.0007 lr: 0.002
+iteration: 610000 loss: 0.0007 lr: 0.002
+iteration: 611000 loss: 0.0007 lr: 0.002
+iteration: 612000 loss: 0.0007 lr: 0.002
+iteration: 613000 loss: 0.0007 lr: 0.002
+iteration: 614000 loss: 0.0007 lr: 0.002
+iteration: 615000 loss: 0.0007 lr: 0.002
+iteration: 616000 loss: 0.0007 lr: 0.002
+iteration: 617000 loss: 0.0007 lr: 0.002
+iteration: 618000 loss: 0.0007 lr: 0.002
+iteration: 619000 loss: 0.0007 lr: 0.002
+iteration: 620000 loss: 0.0007 lr: 0.002
+iteration: 621000 loss: 0.0007 lr: 0.002
+iteration: 622000 loss: 0.0007 lr: 0.002
+iteration: 623000 loss: 0.0007 lr: 0.002
+iteration: 624000 loss: 0.0007 lr: 0.002
+iteration: 625000 loss: 0.0007 lr: 0.002
+iteration: 626000 loss: 0.0007 lr: 0.002
+iteration: 627000 loss: 0.0007 lr: 0.002
+iteration: 628000 loss: 0.0007 lr: 0.002
+iteration: 629000 loss: 0.0007 lr: 0.002
+iteration: 630000 loss: 0.0007 lr: 0.002
+iteration: 631000 loss: 0.0006 lr: 0.002
+iteration: 632000 loss: 0.0007 lr: 0.002
+iteration: 633000 loss: 0.0007 lr: 0.002
+iteration: 634000 loss: 0.0007 lr: 0.002
+iteration: 635000 loss: 0.0007 lr: 0.002
+iteration: 636000 loss: 0.0007 lr: 0.002
+iteration: 637000 loss: 0.0007 lr: 0.002
+iteration: 638000 loss: 0.0007 lr: 0.002
+iteration: 639000 loss: 0.0007 lr: 0.002
+iteration: 640000 loss: 0.0007 lr: 0.002
+iteration: 641000 loss: 0.0007 lr: 0.002
+iteration: 642000 loss: 0.0007 lr: 0.002
+iteration: 643000 loss: 0.0007 lr: 0.002
+iteration: 644000 loss: 0.0007 lr: 0.002
+iteration: 645000 loss: 0.0007 lr: 0.002
+iteration: 646000 loss: 0.0007 lr: 0.002
+iteration: 647000 loss: 0.0007 lr: 0.002
+iteration: 648000 loss: 0.0007 lr: 0.002
+iteration: 649000 loss: 0.0007 lr: 0.002
+iteration: 650000 loss: 0.0007 lr: 0.002
+iteration: 651000 loss: 0.0007 lr: 0.002
+iteration: 652000 loss: 0.0007 lr: 0.002
+iteration: 653000 loss: 0.0007 lr: 0.002
+iteration: 654000 loss: 0.0007 lr: 0.002
+iteration: 655000 loss: 0.0007 lr: 0.002
+iteration: 656000 loss: 0.0007 lr: 0.002
+iteration: 657000 loss: 0.0007 lr: 0.002
+iteration: 658000 loss: 0.0007 lr: 0.002
+iteration: 659000 loss: 0.0007 lr: 0.002
+iteration: 660000 loss: 0.0007 lr: 0.002
+iteration: 661000 loss: 0.0007 lr: 0.002
+iteration: 662000 loss: 0.0007 lr: 0.002
+iteration: 663000 loss: 0.0007 lr: 0.002
+iteration: 664000 loss: 0.0007 lr: 0.002
+iteration: 665000 loss: 0.0006 lr: 0.002
+iteration: 666000 loss: 0.0007 lr: 0.002
+iteration: 667000 loss: 0.0007 lr: 0.002
+iteration: 668000 loss: 0.0007 lr: 0.002
+iteration: 669000 loss: 0.0007 lr: 0.002
+iteration: 670000 loss: 0.0007 lr: 0.002
+iteration: 671000 loss: 0.0007 lr: 0.002
+iteration: 672000 loss: 0.0007 lr: 0.002
+iteration: 673000 loss: 0.0007 lr: 0.002
+iteration: 674000 loss: 0.0007 lr: 0.002
+iteration: 675000 loss: 0.0007 lr: 0.002
+iteration: 676000 loss: 0.0007 lr: 0.002
+iteration: 677000 loss: 0.0007 lr: 0.002
+iteration: 678000 loss: 0.0007 lr: 0.002
+iteration: 679000 loss: 0.0007 lr: 0.002
+iteration: 680000 loss: 0.0007 lr: 0.002
+iteration: 681000 loss: 0.0007 lr: 0.002
+iteration: 682000 loss: 0.0007 lr: 0.002
+iteration: 683000 loss: 0.0007 lr: 0.002
+iteration: 684000 loss: 0.0007 lr: 0.002
+iteration: 685000 loss: 0.0007 lr: 0.002
+iteration: 686000 loss: 0.0007 lr: 0.002
+iteration: 687000 loss: 0.0007 lr: 0.002
+iteration: 688000 loss: 0.0007 lr: 0.002
+iteration: 689000 loss: 0.0007 lr: 0.002
+iteration: 690000 loss: 0.0007 lr: 0.002
+iteration: 691000 loss: 0.0007 lr: 0.002
+iteration: 692000 loss: 0.0007 lr: 0.002
+iteration: 693000 loss: 0.0007 lr: 0.002
+iteration: 694000 loss: 0.0007 lr: 0.002
+iteration: 695000 loss: 0.0007 lr: 0.002
+iteration: 696000 loss: 0.0007 lr: 0.002
+iteration: 697000 loss: 0.0007 lr: 0.002
+iteration: 698000 loss: 0.0007 lr: 0.002
+iteration: 699000 loss: 0.0007 lr: 0.002
+iteration: 700000 loss: 0.0006 lr: 0.002
+iteration: 701000 loss: 0.0007 lr: 0.002
+iteration: 702000 loss: 0.0007 lr: 0.002
+iteration: 703000 loss: 0.0007 lr: 0.002
+iteration: 704000 loss: 0.0007 lr: 0.002
+iteration: 705000 loss: 0.0006 lr: 0.002
+iteration: 706000 loss: 0.0007 lr: 0.002
+iteration: 707000 loss: 0.0007 lr: 0.002
+iteration: 708000 loss: 0.0007 lr: 0.002
+iteration: 709000 loss: 0.0007 lr: 0.002
+iteration: 710000 loss: 0.0007 lr: 0.002
+iteration: 711000 loss: 0.0007 lr: 0.002
+iteration: 712000 loss: 0.0007 lr: 0.002
+iteration: 713000 loss: 0.0007 lr: 0.002
+iteration: 714000 loss: 0.0007 lr: 0.002
+iteration: 715000 loss: 0.0007 lr: 0.002
+iteration: 716000 loss: 0.0007 lr: 0.002
+iteration: 717000 loss: 0.0007 lr: 0.002
+iteration: 718000 loss: 0.0007 lr: 0.002
+iteration: 719000 loss: 0.0007 lr: 0.002
+iteration: 720000 loss: 0.0007 lr: 0.002
+iteration: 721000 loss: 0.0007 lr: 0.002
+iteration: 722000 loss: 0.0007 lr: 0.002
+iteration: 723000 loss: 0.0007 lr: 0.002
+iteration: 724000 loss: 0.0007 lr: 0.002
+iteration: 725000 loss: 0.0007 lr: 0.002
+iteration: 726000 loss: 0.0007 lr: 0.002
+iteration: 727000 loss: 0.0007 lr: 0.002
+iteration: 728000 loss: 0.0007 lr: 0.002
+iteration: 729000 loss: 0.0007 lr: 0.002
+iteration: 730000 loss: 0.0007 lr: 0.002
+iteration: 731000 loss: 0.0007 lr: 0.001
+iteration: 732000 loss: 0.0006 lr: 0.001
+iteration: 733000 loss: 0.0006 lr: 0.001
+iteration: 734000 loss: 0.0007 lr: 0.001
+iteration: 735000 loss: 0.0007 lr: 0.001
+iteration: 736000 loss: 0.0007 lr: 0.001
+iteration: 737000 loss: 0.0007 lr: 0.001
+iteration: 738000 loss: 0.0006 lr: 0.001
+iteration: 739000 loss: 0.0007 lr: 0.001
+iteration: 740000 loss: 0.0007 lr: 0.001
+iteration: 741000 loss: 0.0006 lr: 0.001
+iteration: 742000 loss: 0.0007 lr: 0.001
+iteration: 743000 loss: 0.0006 lr: 0.001
+iteration: 744000 loss: 0.0007 lr: 0.001
+iteration: 745000 loss: 0.0006 lr: 0.001
+iteration: 746000 loss: 0.0007 lr: 0.001
+iteration: 747000 loss: 0.0007 lr: 0.001
+iteration: 748000 loss: 0.0006 lr: 0.001
+iteration: 749000 loss: 0.0006 lr: 0.001
+iteration: 750000 loss: 0.0006 lr: 0.001
+iteration: 751000 loss: 0.0007 lr: 0.001
+iteration: 752000 loss: 0.0007 lr: 0.001
+iteration: 753000 loss: 0.0006 lr: 0.001
+iteration: 754000 loss: 0.0006 lr: 0.001
+iteration: 755000 loss: 0.0007 lr: 0.001
+iteration: 756000 loss: 0.0007 lr: 0.001
+iteration: 757000 loss: 0.0006 lr: 0.001
+iteration: 758000 loss: 0.0007 lr: 0.001
+iteration: 759000 loss: 0.0007 lr: 0.001
+iteration: 760000 loss: 0.0007 lr: 0.001
+iteration: 761000 loss: 0.0006 lr: 0.001
+iteration: 762000 loss: 0.0007 lr: 0.001
+iteration: 763000 loss: 0.0007 lr: 0.001
+iteration: 764000 loss: 0.0007 lr: 0.001
+iteration: 765000 loss: 0.0007 lr: 0.001
+iteration: 766000 loss: 0.0006 lr: 0.001
+iteration: 767000 loss: 0.0007 lr: 0.001
+iteration: 768000 loss: 0.0007 lr: 0.001
+iteration: 769000 loss: 0.0007 lr: 0.001
+iteration: 770000 loss: 0.0006 lr: 0.001
+iteration: 771000 loss: 0.0006 lr: 0.001
+iteration: 772000 loss: 0.0006 lr: 0.001
+iteration: 773000 loss: 0.0007 lr: 0.001
+iteration: 774000 loss: 0.0007 lr: 0.001
+iteration: 775000 loss: 0.0006 lr: 0.001
+iteration: 776000 loss: 0.0006 lr: 0.001
+iteration: 777000 loss: 0.0006 lr: 0.001
+iteration: 778000 loss: 0.0006 lr: 0.001
+iteration: 779000 loss: 0.0007 lr: 0.001
+iteration: 780000 loss: 0.0007 lr: 0.001
+iteration: 781000 loss: 0.0006 lr: 0.001
+iteration: 782000 loss: 0.0006 lr: 0.001
+iteration: 783000 loss: 0.0007 lr: 0.001
+iteration: 784000 loss: 0.0007 lr: 0.001
+iteration: 785000 loss: 0.0006 lr: 0.001
+iteration: 786000 loss: 0.0006 lr: 0.001
+iteration: 787000 loss: 0.0007 lr: 0.001
+iteration: 788000 loss: 0.0007 lr: 0.001
+iteration: 789000 loss: 0.0006 lr: 0.001
+iteration: 790000 loss: 0.0007 lr: 0.001
+iteration: 791000 loss: 0.0007 lr: 0.001
+iteration: 792000 loss: 0.0006 lr: 0.001
+iteration: 793000 loss: 0.0007 lr: 0.001
+iteration: 794000 loss: 0.0007 lr: 0.001
+iteration: 795000 loss: 0.0007 lr: 0.001
+iteration: 796000 loss: 0.0007 lr: 0.001
+iteration: 797000 loss: 0.0006 lr: 0.001
+iteration: 798000 loss: 0.0007 lr: 0.001
+iteration: 799000 loss: 0.0006 lr: 0.001
+iteration: 800000 loss: 0.0006 lr: 0.001
+iteration: 801000 loss: 0.0007 lr: 0.001
+iteration: 802000 loss: 0.0007 lr: 0.001
+iteration: 803000 loss: 0.0007 lr: 0.001
+iteration: 804000 loss: 0.0006 lr: 0.001
+iteration: 805000 loss: 0.0007 lr: 0.001
+iteration: 806000 loss: 0.0006 lr: 0.001
+iteration: 807000 loss: 0.0007 lr: 0.001
+iteration: 808000 loss: 0.0007 lr: 0.001
+iteration: 809000 loss: 0.0006 lr: 0.001
+iteration: 810000 loss: 0.0006 lr: 0.001
+iteration: 811000 loss: 0.0006 lr: 0.001
+iteration: 812000 loss: 0.0006 lr: 0.001
+iteration: 813000 loss: 0.0006 lr: 0.001
+iteration: 814000 loss: 0.0006 lr: 0.001
+iteration: 815000 loss: 0.0007 lr: 0.001
+iteration: 816000 loss: 0.0006 lr: 0.001
+iteration: 817000 loss: 0.0006 lr: 0.001
+iteration: 818000 loss: 0.0006 lr: 0.001
+iteration: 819000 loss: 0.0007 lr: 0.001
+iteration: 820000 loss: 0.0006 lr: 0.001
+iteration: 821000 loss: 0.0006 lr: 0.001
+iteration: 822000 loss: 0.0006 lr: 0.001
+iteration: 823000 loss: 0.0006 lr: 0.001
+iteration: 824000 loss: 0.0007 lr: 0.001
+iteration: 825000 loss: 0.0006 lr: 0.001
+iteration: 826000 loss: 0.0006 lr: 0.001
+iteration: 827000 loss: 0.0007 lr: 0.001
+iteration: 828000 loss: 0.0006 lr: 0.001
+iteration: 829000 loss: 0.0006 lr: 0.001
+iteration: 830000 loss: 0.0006 lr: 0.001
+iteration: 831000 loss: 0.0007 lr: 0.001
+iteration: 832000 loss: 0.0007 lr: 0.001
+iteration: 833000 loss: 0.0007 lr: 0.001
+iteration: 834000 loss: 0.0007 lr: 0.001
+iteration: 835000 loss: 0.0006 lr: 0.001
+iteration: 836000 loss: 0.0007 lr: 0.001
+iteration: 837000 loss: 0.0007 lr: 0.001
+iteration: 838000 loss: 0.0007 lr: 0.001
+iteration: 839000 loss: 0.0006 lr: 0.001
+iteration: 840000 loss: 0.0006 lr: 0.001
+iteration: 841000 loss: 0.0006 lr: 0.001
+iteration: 842000 loss: 0.0006 lr: 0.001
+iteration: 843000 loss: 0.0006 lr: 0.001
+iteration: 844000 loss: 0.0006 lr: 0.001
+iteration: 845000 loss: 0.0006 lr: 0.001
+iteration: 846000 loss: 0.0006 lr: 0.001
+iteration: 847000 loss: 0.0006 lr: 0.001
+iteration: 848000 loss: 0.0007 lr: 0.001
+iteration: 849000 loss: 0.0006 lr: 0.001
+iteration: 850000 loss: 0.0006 lr: 0.001
+iteration: 851000 loss: 0.0006 lr: 0.001
+iteration: 852000 loss: 0.0007 lr: 0.001
+iteration: 853000 loss: 0.0006 lr: 0.001
+iteration: 854000 loss: 0.0007 lr: 0.001
+iteration: 855000 loss: 0.0006 lr: 0.001
+iteration: 856000 loss: 0.0006 lr: 0.001
+iteration: 857000 loss: 0.0006 lr: 0.001
+iteration: 858000 loss: 0.0007 lr: 0.001
+iteration: 859000 loss: 0.0007 lr: 0.001
+iteration: 860000 loss: 0.0006 lr: 0.001
+iteration: 861000 loss: 0.0007 lr: 0.001
+iteration: 862000 loss: 0.0006 lr: 0.001
+iteration: 863000 loss: 0.0006 lr: 0.001
+iteration: 864000 loss: 0.0006 lr: 0.001
+iteration: 865000 loss: 0.0006 lr: 0.001
+iteration: 866000 loss: 0.0006 lr: 0.001
+iteration: 867000 loss: 0.0006 lr: 0.001
+iteration: 868000 loss: 0.0006 lr: 0.001
+iteration: 869000 loss: 0.0006 lr: 0.001
+iteration: 870000 loss: 0.0006 lr: 0.001
+iteration: 871000 loss: 0.0006 lr: 0.001
+iteration: 872000 loss: 0.0007 lr: 0.001
+iteration: 873000 loss: 0.0006 lr: 0.001
+iteration: 874000 loss: 0.0006 lr: 0.001
+iteration: 875000 loss: 0.0006 lr: 0.001
+iteration: 876000 loss: 0.0007 lr: 0.001
+iteration: 877000 loss: 0.0006 lr: 0.001
+iteration: 878000 loss: 0.0006 lr: 0.001
+iteration: 879000 loss: 0.0007 lr: 0.001
+iteration: 880000 loss: 0.0006 lr: 0.001
+iteration: 881000 loss: 0.0006 lr: 0.001
+iteration: 882000 loss: 0.0006 lr: 0.001
+iteration: 883000 loss: 0.0006 lr: 0.001
+iteration: 884000 loss: 0.0007 lr: 0.001
+iteration: 885000 loss: 0.0007 lr: 0.001
+iteration: 886000 loss: 0.0007 lr: 0.001
+iteration: 887000 loss: 0.0006 lr: 0.001
+iteration: 888000 loss: 0.0006 lr: 0.001
+iteration: 889000 loss: 0.0007 lr: 0.001
+iteration: 890000 loss: 0.0006 lr: 0.001
+iteration: 891000 loss: 0.0006 lr: 0.001
+iteration: 892000 loss: 0.0007 lr: 0.001
+iteration: 893000 loss: 0.0006 lr: 0.001
+iteration: 894000 loss: 0.0006 lr: 0.001
+iteration: 895000 loss: 0.0006 lr: 0.001
+iteration: 896000 loss: 0.0006 lr: 0.001
+iteration: 897000 loss: 0.0007 lr: 0.001
+iteration: 898000 loss: 0.0006 lr: 0.001
+iteration: 899000 loss: 0.0006 lr: 0.001
+iteration: 900000 loss: 0.0006 lr: 0.001
+iteration: 901000 loss: 0.0006 lr: 0.001
+iteration: 902000 loss: 0.0006 lr: 0.001
+iteration: 903000 loss: 0.0007 lr: 0.001
+iteration: 904000 loss: 0.0006 lr: 0.001
+iteration: 905000 loss: 0.0006 lr: 0.001
+iteration: 906000 loss: 0.0007 lr: 0.001
+iteration: 907000 loss: 0.0006 lr: 0.001
+iteration: 908000 loss: 0.0007 lr: 0.001
+iteration: 909000 loss: 0.0006 lr: 0.001
+iteration: 910000 loss: 0.0006 lr: 0.001
+iteration: 911000 loss: 0.0006 lr: 0.001
+iteration: 912000 loss: 0.0006 lr: 0.001
+iteration: 913000 loss: 0.0006 lr: 0.001
+iteration: 914000 loss: 0.0006 lr: 0.001
+iteration: 915000 loss: 0.0006 lr: 0.001
+iteration: 916000 loss: 0.0007 lr: 0.001
+iteration: 917000 loss: 0.0006 lr: 0.001
+iteration: 918000 loss: 0.0006 lr: 0.001
+iteration: 919000 loss: 0.0006 lr: 0.001
+iteration: 920000 loss: 0.0006 lr: 0.001
+iteration: 921000 loss: 0.0006 lr: 0.001
+iteration: 922000 loss: 0.0006 lr: 0.001
+iteration: 923000 loss: 0.0006 lr: 0.001
+iteration: 924000 loss: 0.0006 lr: 0.001
+iteration: 925000 loss: 0.0006 lr: 0.001
+iteration: 926000 loss: 0.0006 lr: 0.001
+iteration: 927000 loss: 0.0007 lr: 0.001
+iteration: 928000 loss: 0.0006 lr: 0.001
+iteration: 929000 loss: 0.0006 lr: 0.001
+iteration: 930000 loss: 0.0007 lr: 0.001
+iteration: 931000 loss: 0.0006 lr: 0.001
+iteration: 932000 loss: 0.0006 lr: 0.001
+iteration: 933000 loss: 0.0006 lr: 0.001
+iteration: 934000 loss: 0.0006 lr: 0.001
+iteration: 935000 loss: 0.0006 lr: 0.001
+iteration: 936000 loss: 0.0006 lr: 0.001
+iteration: 937000 loss: 0.0006 lr: 0.001
+iteration: 938000 loss: 0.0006 lr: 0.001
+iteration: 939000 loss: 0.0006 lr: 0.001
+iteration: 940000 loss: 0.0006 lr: 0.001
+iteration: 941000 loss: 0.0006 lr: 0.001
+iteration: 942000 loss: 0.0006 lr: 0.001
+iteration: 943000 loss: 0.0006 lr: 0.001
+iteration: 944000 loss: 0.0006 lr: 0.001
+iteration: 945000 loss: 0.0006 lr: 0.001
+iteration: 946000 loss: 0.0006 lr: 0.001
+iteration: 947000 loss: 0.0007 lr: 0.001
+iteration: 948000 loss: 0.0006 lr: 0.001
+iteration: 949000 loss: 0.0006 lr: 0.001
+iteration: 950000 loss: 0.0006 lr: 0.001
+iteration: 951000 loss: 0.0006 lr: 0.001
+iteration: 952000 loss: 0.0006 lr: 0.001
+iteration: 953000 loss: 0.0006 lr: 0.001
+iteration: 954000 loss: 0.0006 lr: 0.001
+iteration: 955000 loss: 0.0006 lr: 0.001
+iteration: 956000 loss: 0.0007 lr: 0.001
+iteration: 957000 loss: 0.0007 lr: 0.001
+iteration: 958000 loss: 0.0006 lr: 0.001
+iteration: 959000 loss: 0.0006 lr: 0.001
+iteration: 960000 loss: 0.0006 lr: 0.001
+iteration: 961000 loss: 0.0006 lr: 0.001
+iteration: 962000 loss: 0.0006 lr: 0.001
+iteration: 963000 loss: 0.0006 lr: 0.001
+iteration: 964000 loss: 0.0006 lr: 0.001
+iteration: 965000 loss: 0.0007 lr: 0.001
+iteration: 966000 loss: 0.0007 lr: 0.001
+iteration: 967000 loss: 0.0006 lr: 0.001
+iteration: 968000 loss: 0.0006 lr: 0.001
+iteration: 969000 loss: 0.0006 lr: 0.001
+iteration: 970000 loss: 0.0006 lr: 0.001
+iteration: 971000 loss: 0.0006 lr: 0.001
+iteration: 972000 loss: 0.0007 lr: 0.001
+iteration: 973000 loss: 0.0006 lr: 0.001
+iteration: 974000 loss: 0.0006 lr: 0.001
+iteration: 975000 loss: 0.0006 lr: 0.001
+iteration: 976000 loss: 0.0006 lr: 0.001
+iteration: 977000 loss: 0.0006 lr: 0.001
+iteration: 978000 loss: 0.0006 lr: 0.001
+iteration: 979000 loss: 0.0006 lr: 0.001
+iteration: 980000 loss: 0.0007 lr: 0.001
+iteration: 981000 loss: 0.0006 lr: 0.001
+iteration: 982000 loss: 0.0006 lr: 0.001
+iteration: 983000 loss: 0.0006 lr: 0.001
+iteration: 984000 loss: 0.0006 lr: 0.001
+iteration: 985000 loss: 0.0006 lr: 0.001
+iteration: 986000 loss: 0.0006 lr: 0.001
+iteration: 987000 loss: 0.0006 lr: 0.001
+iteration: 988000 loss: 0.0006 lr: 0.001
+iteration: 989000 loss: 0.0006 lr: 0.001
+iteration: 990000 loss: 0.0006 lr: 0.001
+iteration: 991000 loss: 0.0006 lr: 0.001
+iteration: 992000 loss: 0.0007 lr: 0.001
+iteration: 993000 loss: 0.0006 lr: 0.001
+iteration: 994000 loss: 0.0006 lr: 0.001
+iteration: 995000 loss: 0.0006 lr: 0.001
+iteration: 996000 loss: 0.0006 lr: 0.001
+iteration: 997000 loss: 0.0006 lr: 0.001
+iteration: 998000 loss: 0.0006 lr: 0.001
+iteration: 999000 loss: 0.0006 lr: 0.001
+iteration: 1000000 loss: 0.0007 lr: 0.001
+iteration: 1001000 loss: 0.0006 lr: 0.001
+iteration: 1002000 loss: 0.0006 lr: 0.001
+iteration: 1003000 loss: 0.0006 lr: 0.001
+iteration: 1004000 loss: 0.0006 lr: 0.001
+iteration: 1005000 loss: 0.0006 lr: 0.001
+iteration: 1006000 loss: 0.0006 lr: 0.001
+iteration: 1007000 loss: 0.0006 lr: 0.001
+iteration: 1008000 loss: 0.0006 lr: 0.001
+iteration: 1009000 loss: 0.0006 lr: 0.001
+iteration: 1010000 loss: 0.0006 lr: 0.001
+iteration: 1011000 loss: 0.0006 lr: 0.001
+iteration: 1012000 loss: 0.0006 lr: 0.001
+iteration: 1013000 loss: 0.0006 lr: 0.001
+iteration: 1014000 loss: 0.0006 lr: 0.001
+iteration: 1015000 loss: 0.0006 lr: 0.001
+iteration: 1016000 loss: 0.0006 lr: 0.001
+iteration: 1017000 loss: 0.0006 lr: 0.001
+iteration: 1018000 loss: 0.0006 lr: 0.001
+iteration: 1019000 loss: 0.0006 lr: 0.001
+iteration: 1020000 loss: 0.0006 lr: 0.001
+iteration: 1021000 loss: 0.0006 lr: 0.001
+iteration: 1022000 loss: 0.0006 lr: 0.001
+iteration: 1023000 loss: 0.0006 lr: 0.001
+iteration: 1024000 loss: 0.0006 lr: 0.001
+iteration: 1025000 loss: 0.0006 lr: 0.001
+iteration: 1026000 loss: 0.0006 lr: 0.001
+iteration: 1027000 loss: 0.0006 lr: 0.001
+iteration: 1028000 loss: 0.0006 lr: 0.001
+iteration: 1029000 loss: 0.0007 lr: 0.001
+iteration: 1030000 loss: 0.0006 lr: 0.001
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1322, in _do_call
+    return fn(*args)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1307, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1409, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.CancelledError: Enqueue operation was cancelled
+	 [[Node: fifo_queue_enqueue = QueueEnqueueV2[Tcomponents=[DT_FLOAT, DT_FLOAT, DT_FLOAT, DT_FLOAT, DT_FLOAT], timeout_ms=-1, _device="/job:localhost/replica:0/task:0/device:CPU:0"](fifo_queue, _arg_Placeholder_0_0, _arg_Placeholder_1_0_1, _arg_Placeholder_2_0_2, _arg_Placeholder_3_0_3, _arg_Placeholder_4_0_4)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/train.py", line 53, in load_and_enqueue
+    sess.run(enqueue_op, feed_dict=food)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 900, in run
+    run_metadata_ptr)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1135, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1316, in _do_run
+    run_metadata)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1335, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.CancelledError: Enqueue operation was cancelled
+	 [[Node: fifo_queue_enqueue = QueueEnqueueV2[Tcomponents=[DT_FLOAT, DT_FLOAT, DT_FLOAT, DT_FLOAT, DT_FLOAT], timeout_ms=-1, _device="/job:localhost/replica:0/task:0/device:CPU:0"](fifo_queue, _arg_Placeholder_0_0, _arg_Placeholder_1_0_1, _arg_Placeholder_2_0_2, _arg_Placeholder_3_0_3, _arg_Placeholder_4_0_4)]]
+
+Caused by op 'fifo_queue_enqueue', defined at:
+  File "scripts/deeplabcut_demo_cluster.py", line 18, in <module>
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/training.py", line 79, in train_network
+    train(str(poseconfigfile),displayiters,saveiters,maxiters,max_to_keep=max_snapshots_to_keep) #pass on path and file name for pose_cfg.yaml!
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/train.py", line 88, in train
+    batch, enqueue_op, placeholders = setup_preloading(batch_spec)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/train.py", line 39, in setup_preloading
+    enqueue_op = q.enqueue(placeholders_list)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/ops/data_flow_ops.py", line 346, in enqueue
+    self._queue_ref, vals, name=scope)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/ops/gen_data_flow_ops.py", line 3977, in queue_enqueue_v2
+    timeout_ms=timeout_ms, name=name)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+CancelledError (see above for traceback): Enqueue operation was cancelled
+	 [[Node: fifo_queue_enqueue = QueueEnqueueV2[Tcomponents=[DT_FLOAT, DT_FLOAT, DT_FLOAT, DT_FLOAT, DT_FLOAT], timeout_ms=-1, _device="/job:localhost/replica:0/task:0/device:CPU:0"](fifo_queue, _arg_Placeholder_0_0, _arg_Placeholder_1_0_1, _arg_Placeholder_2_0_2, _arg_Placeholder_3_0_3, _arg_Placeholder_4_0_4)]]
+
+
+Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['hand', 'Finger1', 'Finger2', 'Joystick'],
+ 'batch_size': 1,
+ 'bottomheight': 400,
+ 'crop': True,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_demoDec31/demo_cluster_icm95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'leftwidth': 400,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1000,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_demoDec31/Documentation_data-demo_95shuffle1.pickle',
+ 'minsize': 100,
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pos_dist_thresh': 17,
+ 'project_path': '/network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31',
+ 'regularize': False,
+ 'rightwidth': 400,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31/dlc-models/iteration-0/demoDec31-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'topheight': 400,
+ 'use_gt_segm': False,
+ 'video': False,
+ 'video_batch': False,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+INFO:tensorflow:Restoring parameters from /network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31/dlc-models/iteration-0/demoDec31-trainset95shuffle1/train/snapshot-1030000
+Restoring parameters from /network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31/dlc-models/iteration-0/demoDec31-trainset95shuffle1/train/snapshot-1030000
+0it [00:00, ?it/s]1it [00:01,  1.34s/it]3it [00:01,  1.04it/s]5it [00:01,  1.44it/s]7it [00:01,  1.97it/s]9it [00:01,  2.65it/s]11it [00:02,  3.51it/s]13it [00:02,  4.50it/s]15it [00:02,  5.65it/s]17it [00:02,  6.90it/s]19it [00:02,  8.05it/s]
+Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['hand', 'Finger1', 'Finger2', 'Joystick'],
+ 'batch_size': 1,
+ 'bottomheight': 400,
+ 'crop': True,
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_demoDec31/demo_cluster_icm95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'leftwidth': 400,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1000,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_demoDec31/Documentation_data-demo_95shuffle1.pickle',
+ 'minsize': 100,
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pos_dist_thresh': 17,
+ 'project_path': '/network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31',
+ 'regularize': False,
+ 'rightwidth': 400,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31/dlc-models/iteration-0/demoDec31-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'topheight': 400,
+ 'use_gt_segm': False,
+ 'video': False,
+ 'video_batch': False,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+INFO:tensorflow:Restoring parameters from /network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31/dlc-models/iteration-0/demoDec31-trainset95shuffle1/train/snapshot-1030000
+Restoring parameters from /network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31/dlc-models/iteration-0/demoDec31-trainset95shuffle1/train/snapshot-1030000
+  0%|          | 0/256 [00:00<?, ?it/s]  8%|▊         | 20/256 [00:01<00:17, 13.77it/s] 12%|█▏        | 30/256 [00:01<00:14, 15.12it/s] 16%|█▌        | 40/256 [00:02<00:12, 17.49it/s] 20%|█▉        | 50/256 [00:02<00:11, 18.23it/s] 23%|██▎       | 60/256 [00:03<00:09, 20.21it/s] 27%|██▋       | 70/256 [00:03<00:09, 20.13it/s] 31%|███▏      | 80/256 [00:04<00:08, 21.87it/s] 35%|███▌      | 90/256 [00:04<00:07, 21.18it/s] 39%|███▉      | 100/256 [00:04<00:06, 22.71it/s] 43%|████▎     | 110/256 [00:05<00:06, 21.84it/s] 47%|████▋     | 120/256 [00:05<00:05, 23.28it/s] 51%|█████     | 130/256 [00:06<00:05, 22.26it/s] 55%|█████▍    | 140/256 [00:06<00:04, 23.51it/s] 59%|█████▊    | 150/256 [00:07<00:04, 22.28it/s] 62%|██████▎   | 160/256 [00:07<00:04, 23.58it/s] 66%|██████▋   | 170/256 [00:08<00:03, 22.40it/s] 70%|███████   | 180/256 [00:08<00:03, 23.79it/s] 74%|███████▍  | 190/256 [00:08<00:02, 22.81it/s] 78%|███████▊  | 200/256 [00:09<00:02, 24.13it/s] 82%|████████▏ | 210/256 [00:09<00:02, 22.88it/s] 86%|████████▌ | 220/256 [00:10<00:01, 24.34it/s] 90%|████████▉ | 230/256 [00:10<00:01, 23.15it/s] 94%|█████████▍| 240/256 [00:10<00:00, 23.91it/s] 98%|█████████▊| 250/256 [00:11<00:00, 22.38it/s]260it [00:11, 23.58it/s]                         The training dataset is successfully created. Use the function 'train_network' to start training. Happy training!
+Training parameter:
+{'stride': 8.0, 'weigh_part_predictions': False, 'weigh_negatives': False, 'fg_fraction': 0.25, 'weigh_only_present_joints': False, 'mean_pixel': [123.68, 116.779, 103.939], 'shuffle': True, 'snapshot_prefix': '/network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31/dlc-models/iteration-0/demoDec31-trainset95shuffle1/train/snapshot', 'log_dir': 'log', 'global_scale': 0.8, 'location_refinement': True, 'locref_stdev': 7.2801, 'locref_loss_weight': 0.05, 'locref_huber_loss': True, 'optimizer': 'sgd', 'intermediate_supervision': False, 'intermediate_supervision_layer': 12, 'regularize': False, 'weight_decay': 0.0001, 'mirror': False, 'crop_pad': 0, 'scoremap_dir': 'test', 'dataset_type': 'default', 'use_gt_segm': False, 'batch_size': 1, 'video': False, 'video_batch': False, 'crop': True, 'cropratio': 0.4, 'minsize': 100, 'leftwidth': 400, 'rightwidth': 400, 'topheight': 400, 'bottomheight': 400, 'all_joints': [[0], [1], [2], [3]], 'all_joints_names': ['hand', 'Finger1', 'Finger2', 'Joystick'], 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_demoDec31/demo_cluster_icm95shuffle1.mat', 'display_iters': 1000, 'init_weights': '/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt', 'max_input_size': 1000, 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_demoDec31/Documentation_data-demo_95shuffle1.pickle', 'multi_step': [[0.005, 10000], [0.02, 430000], [0.002, 730000], [0.001, 1030000]], 'net_type': 'resnet_50', 'num_joints': 4, 'pos_dist_thresh': 17, 'project_path': '/network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31', 'save_iters': 50000, 'scale_jitter_lo': 0.5, 'scale_jitter_up': 1.25}
+Starting training....
+The network is now trained and ready to evaluate. Use the function 'evaluate_network' to evaluate the network.
+Running  DeepCut_resnet50_demoDec31shuffle1_1030000  with # of trainingiterations: 1030000
+Analyzing data...
+Done and results stored for snapshot:  snapshot-1030000
+Results for 1030000  training iterations: 95 1 train error: 2.25 pixels. Test error: 14.06  pixels.
+With pcutoff of 0.1  train error: 2.25 pixels. Test error: 14.06 pixels
+Thereby, the errors are given by the average distances between the labels by DLC and the scorer.
+The network is evaluated and the results are stored in the subdirectory 'evaluation_results'.
+If it generalizes well, choose the best model for prediction and update the config file with the appropriate index for the 'snapshotindex'.
+Use the function 'analyze_video' to make predictions on new videos.
+Otherwise consider retraining the network (see DeepLabCut workflow Fig 2)
+Using snapshot-1030000 for model /network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/demo-cluster_icm-2018-12-31/dlc-models/iteration-0/demoDec31-trainset95shuffle1
+/network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/videos/reachingvideo1.avi
+Starting %  /network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/videos/reachingvideo1.avi
+Loading  /network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/videos/reachingvideo1.avi
+Duration of video [s]:  8.53 , recorded with  30.0 fps!
+Overall # of frames:  256 without cropped frame dimensions:  832 747
+Starting to extract posture
+Detected frames:  256
+Saving results in /network/lustre/iss01/home/maxime.kermarquer/demo/deeplabcut/videos...
+The videos are analyzed. Now your research can truly start! 
+ You can create labeled videos with 'create_labeled_video'.
+If the tracking is not satisfactory for some videos, consider expanding the training set. You can use the function 'extract_outlier_frames' to extract any outlier frames!
+Traceback (most recent call last):
+  File "scripts/deeplabcut_demo_cluster.py", line 25, in <module>
+    deeplabcut.create_labeled_video(config_path, video_path)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/deeplabcut/utils/make_labeled_video.py", line 224, in create_labeled_video
+    videofolder= Path(video).parents[0] #where your folder with videos is.
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/pathlib.py", line 594, in __getitem__
+    raise IndexError(idx)
+IndexError: 0
+Exception ignored in: <bound method tqdm.__del__ of 260it [00:12, 23.58it/s]>
+Traceback (most recent call last):
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tqdm/_tqdm.py", line 931, in __del__
+    self.close()
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tqdm/_tqdm.py", line 1133, in close
+    self._decr_instances(self)
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tqdm/_tqdm.py", line 496, in _decr_instances
+    cls.monitor.exit()
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/site-packages/tqdm/_monitor.py", line 52, in exit
+    self.join()
+  File "/network/lustre/iss01/apps/teams/wyart/anaconda/5.3.0/envs/deeplabcut/lib/python3.6/threading.py", line 1053, in join
+    raise RuntimeError("cannot join current thread")
+RuntimeError: cannot join current thread
